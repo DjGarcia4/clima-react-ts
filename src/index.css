@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("/bg_clima.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
