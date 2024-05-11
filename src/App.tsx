@@ -14,11 +14,8 @@ function App() {
       </h1>
       <div className=" text-white grid grid-cols-1 md:grid-cols-2 container mx-auto">
         <Form fetchWeather={fetchWeather} />
-        {loading ? (
-          <Spinner />
-        ) : (
-          hasWeatherData && <WeatherDetail weather={weather} />
-        )}
+        {loading && <Spinner />}
+        {hasWeatherData && <WeatherDetail weather={weather} />}
       </div>
       <ToastContainer />
     </>
